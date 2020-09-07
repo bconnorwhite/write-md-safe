@@ -1,24 +1,28 @@
 import { parser, TokensList } from "marked";
 import { writeFile, writeFileSync } from "write-file-safe";
 
-export function writeMarkdown(text: string): Promise<void>;
-export function writeMarkdown(toListken: TokensList): Promise<void>;
-export function writeMarkdown(input: string | TokensList) {
-  if(typeof input === "string") {
-    return writeFile(input);
+export type MarkdownContent = string | TokensList;
+
+export function markdownContentToString(content?: MarkdownContent) {
+  if(content === undefined) {
+    return "";
+  } else if(typeof content === "string") {
+    return content;
   } else {
-    return writeFile(parser(input));
+    return parser(content);
   }
 }
 
-export function writeMarkdownSync(text: string): void;
-export function writeMarkdownSync(toListken: TokensList): void;
-export function writeMarkdownSync(input: string | TokensList) {
-  if(typeof input === "string") {
-    return writeFileSync(input);
-  } else {
-    return writeFileSync(parser(input));
-  }
+export function writeMarkdown(path: string, text?: string): Promise<void>;
+export function writeMarkdown(path: string, tokensList?: TokensList): Promise<void>;
+export function writeMarkdown(path: string, content?: string | TokensList) {
+  return writeFile(markdownContentToString(content));
+}
+
+export function writeMarkdownSync(path: string, text?: string): void;
+export function writeMarkdownSync(path: string, tokensList?: TokensList): void;
+export function writeMarkdownSync(path: string, content?: string | TokensList) {
+  return writeFileSync(markdownContentToString(content));
 }
 
 export {
