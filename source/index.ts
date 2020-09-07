@@ -16,13 +16,13 @@ export function markdownContentToString(content?: MarkdownContent) {
 export function writeMarkdown(path: string, text?: string): Promise<void>;
 export function writeMarkdown(path: string, tokensList?: TokensList): Promise<void>;
 export function writeMarkdown(path: string, content?: string | TokensList) {
-  return writeFile(markdownContentToString(content));
+  return writeFile(path, markdownContentToString(content));
 }
 
 export function writeMarkdownSync(path: string, text?: string): void;
 export function writeMarkdownSync(path: string, tokensList?: TokensList): void;
 export function writeMarkdownSync(path: string, content?: string | TokensList) {
-  return writeFileSync(markdownContentToString(content));
+  return writeFileSync(path, markdownContentToString(content));
 }
 
 export {
