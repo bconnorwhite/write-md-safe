@@ -29,15 +29,6 @@ npm install write-md-safe
 ```
 
 ## API
-### Usage
-```ts
-import { writeMarkdown, writeMarkdownSync } from "write-file-safe";
-
-writeMarkdown("# My Markdown String").then(() => {
-  // done
-});
-
-```
 ### Types
 ```ts
 import {
@@ -46,7 +37,7 @@ import {
   markdownContentToString,
   MarkdownContent,
   TokensList
-} from "write-file-safe";
+} from "write-md-safe";
 
 function writeMarkdown(path: string, content: MarkdownContent): Promise<void>;
 
