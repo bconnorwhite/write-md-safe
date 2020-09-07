@@ -1,6 +1,6 @@
 {
   "name": "write-md-safe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Write markdown files from a Marked token list or string",
   "license": "MIT",
   "author": {
