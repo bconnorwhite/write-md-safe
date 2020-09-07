@@ -1,0 +1,34 @@
+{
+  "name": "write-md-safe",
+  "version": "1.0.0",
+  "description": "Write markdown files from a Marked token list or string",
+  "license": "MIT",
+  "author": {
+    "name": "Connor White",
+    "email": "connor.bcw@gmail.com",
+    "url": "https://connorwhite.org"
+  },
+  "homepage": "htps://connorwhite.org/github/write-md-safe",
+  "repository": {
+    "type": "git",
+    "url": "git+git+https://github.com/bconnorwhite/write-md-safe.git.git"
+  },
+  "keywords": [],
+  "files": [
+    "build"
+  ],
+  "main": "./build/index.js",
+  "scripts": {
+    "build": "bob build",
+    "postversion": "git push",
+    "prepublishOnly": "yarn run build"
+  },
+  "dependencies": {
+    "marked": "^1.1.1",
+    "write-file-safe": "^1.0.3"
+  },
+  "devDependencies": {
+    "@bconnorwhite/bob": "^2.0.1",
+    "@types/marked": "^1.1.0"
+  }
+}
