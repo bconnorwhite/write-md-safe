@@ -36,16 +36,25 @@ import { writeMarkdown, writeMarkdownSync } from "write-file-safe";
 writeMarkdown("# My Markdown String").then(() => {
   // done
 });
+
 ```
 ### Types
 ```ts
-import { writeMarkdown, writeMarkdownSync, TokensList } from "write-file-safe";
+import {
+  writeMarkdown,
+  writeMarkdownSync,
+  markdownContentToString,
+  MarkdownContent,
+  TokensList
+} from "write-file-safe";
 
-writeMarkdown(text: string): Promise<void>;
-writeMarkdown(tokenList: TokenList): Promise<void>;
+function writeMarkdown(path: string, content: MarkdownContent): Promise<void>;
 
-writeMarkdownSync(text: string): void;
-writeMarkdownSync(tokenList: TokenList): void;
+function writeMarkdownSync(path: string, content: MarkdownContent): void;
+
+function markdownContentToString(content?: MarkdownContent): string;
+
+type MarkdownContent = string | TokensList;
 
 // a Marked token list
 type TokensList = Token[] & {
@@ -57,7 +66,6 @@ type TokensList = Token[] & {
   };
 }
 ```
-
 
 <br />
 
