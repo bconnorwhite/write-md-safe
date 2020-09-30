@@ -13,7 +13,16 @@
     "type": "git",
     "url": "git+git+https://github.com/bconnorwhite/write-md-safe.git.git"
   },
-  "keywords": [],
+  "keywords": [
+    "write",
+    "markdown",
+    "md",
+    "file",
+    "safe",
+    "json",
+    "marked",
+    "string"
+  ],
   "files": [
     "build"
   ],
