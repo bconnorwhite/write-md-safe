@@ -1,4 +1,4 @@
-import { parser, TokensList } from "marked";
+import { parser, TokensList, Token } from "marked";
 import { writeFile, writeFileSync } from "write-file-safe";
 
 export type MarkdownContent = string | TokensList;
@@ -26,5 +26,6 @@ export function writeMarkdownSync(path: string, content?: string | TokensList) {
 }
 
 export {
-  TokensList
+  TokensList,
+  Token
 }

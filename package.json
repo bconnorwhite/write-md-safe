@@ -24,11 +24,11 @@
     "prepublishOnly": "yarn run build"
   },
   "dependencies": {
+    "@types/marked": "^1.1.0",
     "marked": "^1.1.1",
     "write-file-safe": "^1.0.3"
   },
   "devDependencies": {
-    "@bconnorwhite/bob": "^2.0.1",
-    "@types/marked": "^1.1.0"
+    "@bconnorwhite/bob": "^2.0.1"
   }
 }
