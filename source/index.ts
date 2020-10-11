@@ -1,31 +1,32 @@
-import { parser, TokensList, Token } from "marked";
-import { writeFile, writeFileSync } from "write-file-safe";
+import { Token, Tokens } from "marked";
+import { writeFile, writeFileSync, Options } from "write-file-safe";
 
-export type MarkdownContent = string | TokensList;
+export type MarkdownContent = string | (Token | string)[];
 
-export function markdownContentToString(content?: MarkdownContent) {
-  if(content === undefined) {
-    return "";
-  } else if(typeof content === "string") {
+export function markdownContentToString(content: MarkdownContent = "") {
+  if(typeof content === "string") {
     return content;
   } else {
-    return parser(content);
+    return content.reduce((retval: string, item) => {
+      if(typeof item === "string") {
+        return retval + item;
+      } else {
+        return retval + item.raw;
+      }
+    }, "");
   }
 }
 
-export function writeMarkdown(path: string, text?: string): Promise<void>;
-export function writeMarkdown(path: string, tokensList?: TokensList): Promise<void>;
-export function writeMarkdown(path: string, content?: string | TokensList) {
-  return writeFile(path, markdownContentToString(content));
+export function writeMarkdown(path: string, content?: MarkdownContent, options?: Options) {
+  return writeFile(path, markdownContentToString(content), options);
 }
 
-export function writeMarkdownSync(path: string, text?: string): void;
-export function writeMarkdownSync(path: string, tokensList?: TokensList): void;
-export function writeMarkdownSync(path: string, content?: string | TokensList) {
-  return writeFileSync(path, markdownContentToString(content));
+export function writeMarkdownSync(path: string, content?: MarkdownContent, options?: Options) {
+  return writeFileSync(path, markdownContentToString(content), options);
 }
 
 export {
-  TokensList,
-  Token
+  Options,
+  Token,
+  Tokens
 }
