@@ -11,7 +11,7 @@
   "homepage": "htps://connorwhite.org/github/write-md-safe",
   "repository": {
     "type": "git",
-    "url": "git+git+https://github.com/bconnorwhite/write-md-safe.git.git"
+    "url": "git+https://github.com/bconnorwhite/write-md-safe.git"
   },
   "keywords": [
     "write",
