@@ -1,3 +1,12 @@
+## [1.1.2](https://github.com/bconnorwhite/write-md-safe/compare/v1.1.1...v1.1.2) (2021-03-30)
+
+
+### Bug Fixes
+
+* browserslist ([77dfa24](https://github.com/bconnorwhite/write-md-safe/commit/77dfa24cb0b4e3f81c42112899ef200ebe643cd6))
+
+
+
 ## [1.1.1](https://github.com/bconnorwhite/write-md-safe/compare/v1.1.0...v1.1.1) (2021-03-30)
 
 
