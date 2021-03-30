@@ -1,3 +1,12 @@
+## [1.1.1](https://github.com/bconnorwhite/write-md-safe/compare/v1.1.0...v1.1.1) (2021-03-30)
+
+
+### Bug Fixes
+
+* dependency bumps ([9e81a4d](https://github.com/bconnorwhite/write-md-safe/commit/9e81a4d6e53ef9df7bcca3b52413a4ad516ed90e))
+
+
+
 # [1.1.0](https://github.com/bconnorwhite/write-md-safe/compare/v1.0.4...v1.1.0) (2020-10-11)
 
 
