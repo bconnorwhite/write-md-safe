@@ -36,10 +36,10 @@
   },
   "dependencies": {
     "marked": "^2.0.1",
-    "write-file-safe": "^1.2.2"
+    "write-file-safe": "^1.2.3"
   },
   "devDependencies": {
-    "@bconnorwhite/bob": "^2.9.2",
+    "@bconnorwhite/bob": "^2.9.4",
     "@types/marked": "^2.0.1",
     "@types/mock-fs": "^4.13.0",
     "mock-fs": "^4.13.0",
