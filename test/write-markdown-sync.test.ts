@@ -6,7 +6,7 @@ import { writeMarkdownSync } from "../source";
 beforeEach(async () => {
   mock({
     "/test": {}
-  })
+  });
 });
 
 afterEach(async () => {

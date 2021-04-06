@@ -29,4 +29,4 @@ export {
   Options,
   Token,
   Tokens
-}
+};

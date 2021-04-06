@@ -6,7 +6,7 @@ import { writeMarkdown } from "../source";
 beforeEach(async () => {
   mock({
     "/test": {}
-  })
+  });
 });
 
 afterEach(async () => {
@@ -18,7 +18,7 @@ test("write", async () => {
     expect(success).toBe(true);
     return readFile("/test/file.md").then((text) => {
       expect(text).toBe("# Title\n");
-    })
+    });
   });
 });
 
@@ -27,7 +27,7 @@ test("write no newline", async () => {
     expect(success).toBe(true);
     return readFile("/test/file.md").then((text) => {
       expect(text).toBe("# Title");
-    })
+    });
   });
 });
 
@@ -36,6 +36,6 @@ test("write", async () => {
     expect(success).toBe(true);
     return readFile("/test/file.md").then((text) => {
       expect(text).toBe("# Title\n");
-    })
+    });
   });
 });
