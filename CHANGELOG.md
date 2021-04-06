@@ -1,3 +1,12 @@
+## [1.1.3](https://github.com/bconnorwhite/write-md-safe/compare/v1.1.2...v1.1.3) (2021-04-06)
+
+
+### Bug Fixes
+
+* dependency bump - preserve order for concurrent writes ([3417018](https://github.com/bconnorwhite/write-md-safe/commit/3417018e927c2cab268862f599e9ee85b0434d9b))
+
+
+
 ## [1.1.2](https://github.com/bconnorwhite/write-md-safe/compare/v1.1.1...v1.1.2) (2021-03-30)
 
 
