@@ -1,3 +1,17 @@
+# [1.2.0](https://github.com/bconnorwhite/write-md-safe/compare/v1.1.3...v1.2.0) (2021-04-13)
+
+
+### Bug Fixes
+
+* dependency bumps ([69328c7](https://github.com/bconnorwhite/write-md-safe/commit/69328c7ca752b10ea8b8b247d1c54440c8050e75))
+
+
+### Features
+
+* add avoid overwrite option ([73cedb2](https://github.com/bconnorwhite/write-md-safe/commit/73cedb2a6b2ccdbbb79f88a5ca71c41506b3a532))
+
+
+
 ## [1.1.3](https://github.com/bconnorwhite/write-md-safe/compare/v1.1.2...v1.1.3) (2021-04-06)
 
 
