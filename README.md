@@ -73,7 +73,6 @@ type Options = {
 
 <h2>Dependencies<img align="right" alt="dependencies" src="https://img.shields.io/david/bconnorwhite/write-md-safe.svg"></h2>
 
-- [@types/marked](https://www.npmjs.com/package/@types/marked): TypeScript definitions for Marked
 - [marked](https://www.npmjs.com/package/marked): A markdown parser built for speed
 - [write-file-safe](https://www.npmjs.com/package/write-file-safe): Write files and create parent directories if necessary
 
@@ -81,8 +80,9 @@ type Options = {
 
 <h2>Dev Dependencies<img align="right" alt="David" src="https://img.shields.io/david/dev/bconnorwhite/write-md-safe.svg"></h2>
 
-- [@bconnorwhite/bob](https://www.npmjs.com/package/@bconnorwhite/bob): undefined
-- [@types/mock-fs](https://www.npmjs.com/package/@types/mock-fs): undefined
+- [@bconnorwhite/bob](https://www.npmjs.com/package/@bconnorwhite/bob): Bob is a toolkit for TypeScript projects
+- [@types/marked](https://www.npmjs.com/package/@types/marked): TypeScript definitions for Marked
+- [@types/mock-fs](https://www.npmjs.com/package/@types/mock-fs): TypeScript definitions for mock-fs
 - [mock-fs](https://www.npmjs.com/package/mock-fs): A configurable mock file system.  You know, for testing.
 - [read-file-safe](https://www.npmjs.com/package/read-file-safe): Read files without try catch
 
