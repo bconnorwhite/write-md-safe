@@ -3800,6 +3800,11 @@ file-entry-cache@^5.0.1:
   dependencies:
     flat-cache "^2.0.1"
 
+file-exists-safe@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/file-exists-safe/-/file-exists-safe-1.1.0.tgz#db73e875853d47a371f1f3cbec9e6b321e9096df"
+  integrity sha512-F0gcLPWcrLnYxlU46sf0UdgDsVaYCDyVVVsT1fpfUJ726R+GmS220+6LCPT1xbU8r6lCrwlG1gnKLF7slnObQw==
+
 file-uri-to-path@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/file-uri-to-path/-/file-uri-to-path-1.0.0.tgz#553a7b8446ff6f684359c445f1e37a05dacc33dd"
@@ -7013,6 +7018,11 @@ regjsparser@^0.6.4:
   dependencies:
     jsesc "~0.5.0"
 
+remove-file-safe@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/remove-file-safe/-/remove-file-safe-1.0.1.tgz#550c1ec9c59fc115eb51de097a0052ef14b07061"
+  integrity sha512-YzBF0IfrPG9PMGCZsQjMNeIyi9+PPYLDHTcU+bDhgZhfaO6WFpA75+kB5eEkg9C3Puomo6Y50Ll8sCem2TiBdA==
+
 remove-trailing-separator@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/remove-trailing-separator/-/remove-trailing-separator-1.1.0.tgz#c24bce2a283adad5bc3f58e0d48249b92379d8ef"
@@ -8412,7 +8422,7 @@ wrappy@1:
   resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
   integrity sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=
 
-write-dir-safe@^1.0.0:
+write-dir-safe@^1.0.0, write-dir-safe@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/write-dir-safe/-/write-dir-safe-1.0.1.tgz#db5695a76f33f7a1b28ed48d370bab099d34980a"
   integrity sha512-wnY2yzWbfawmHs6sbAOsqLf+yEPS3I+9/kRrL9zAESb56KQa7gVG8ofxtZcdIAqsb47lHPXqEMOhzXoFJkE9Pw==
@@ -8432,7 +8442,7 @@ write-file-safe@^1.0.2, write-file-safe@^1.0.3:
   resolved "https://registry.yarnpkg.com/write-file-safe/-/write-file-safe-1.0.3.tgz#6e259879617da395a641296d459e13d3ea36575f"
   integrity sha512-bdAWuzoYTLhVmAvKU7MIy2tWUs6afawPrOaktl6YBGk28LRh5RphDLDAqoXXe2j9ZvLeh+fAblnhQ6wZ0hd+iQ==
 
-write-file-safe@^1.2.2, write-file-safe@^1.2.3:
+write-file-safe@^1.2.2:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/write-file-safe/-/write-file-safe-1.2.3.tgz#d998bee7893f04c0be0380b045ad7a6dddb6c615"
   integrity sha512-hHjxdVZYFDK/S1zEzEJ8kbVmMt5cNpClVZCKPOghxmf5dgK1WUUPF4xyuCyjpCuxDN2MNJ511U23RsEanMbBQA==
@@ -8440,6 +8450,16 @@ write-file-safe@^1.2.2, write-file-safe@^1.2.3:
     p-lock "^2.0.0"
     terminating-newline "^1.2.4"
     write-dir-safe "^1.0.0"
+
+write-file-safe@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/write-file-safe/-/write-file-safe-1.3.1.tgz#5a1c641ea7a4dfa3f604671beae8829521015eeb"
+  integrity sha512-9WC/i6b/WDNEtFFftvcnOwBD9QHmofAcURq1KsSxGsAHHTrQNbuwXApE11UcLuX0d49SU7W6CaV9Nqgaive8tw==
+  dependencies:
+    file-exists-safe "^1.1.0"
+    remove-file-safe "^1.0.1"
+    terminating-newline "^1.2.4"
+    write-dir-safe "^1.0.1"
 
 write-json-safe@^1.0.0:
   version "1.0.1"
